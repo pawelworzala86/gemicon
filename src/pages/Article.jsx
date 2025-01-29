@@ -3,13 +3,13 @@ import http from './../http.js'
 
 import Main from './../components/Main'
 
-const Home = () => {
+const Article = () => {
     const [data, setData] = useState({});
 
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await http.get('/api/landing', 'json');
+                const response = await http.get('/api/article', 'json');
                 setData(response);
             } catch (error) {
                 console.error('Error fetching data:', error);
@@ -26,4 +26,4 @@ const Home = () => {
       );
 };
 
-export default Home;
+export default Article;
