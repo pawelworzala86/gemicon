@@ -5,11 +5,11 @@ const Content = ({data}) => {
                 data.map((content, index) => {
                     if(content.type=='text'){
                         return (<div key={index}>
-                            <p class="mb-3">{content.text}</p>
+                            <p className="mb-3">{content.text}</p>
                         </div>);
                     }else if(content.type=='code'){
                         return (<div key={index}>
-                            <pre class="mb-3">{content.text}</pre>
+                            <pre className="mb-3">{content.text}</pre>
                         </div>);
                     }else{
                         return (<div key={index}>

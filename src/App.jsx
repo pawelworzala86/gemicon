@@ -10,7 +10,7 @@ import Contact from "./pages/Contact";
 import NoPage from "./pages/NoPage";
 
 function App() {
-  const [count, setCount] = useState(0)
+  //const [count, setCount] = useState(0)
 
   return (
     <>
