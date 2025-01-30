@@ -8,7 +8,15 @@ const Home = ({data}) => {
         <>
         {data.length > 0 ? (
                 data.map((item, index) => {
-                    if(item.type=='hero'){
+                    if(item.type=='meta'){
+                        return (
+                            <Helmet>
+                                <meta name="description" content="{item.description}" />
+                                <meta name="keywords" content="{item.keywords}" />
+                                <title>{item.title}</title>
+                            </Helmet>
+                            )
+                    }else if(item.type=='hero'){
                         return (
                             <div key={index} className="hero">
                                 <h1>{item.title}</h1>

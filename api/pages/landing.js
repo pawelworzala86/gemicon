@@ -1,5 +1,11 @@
 export const landing = [
     {
+        type: 'meta',
+        description: 'Opis strony',
+        keywords: 'key1, key2',
+        title: 'Tytuł',
+    },
+    {
         type:'hero',
         title:'Paweł Worzała',
         content: [

@@ -1,5 +1,11 @@
 export const article = [
     {
+        type: 'meta',
+        description: 'Opis strony',
+        keywords: 'key1, key2',
+        title: 'Artykuł',
+    },
+    {
         type:'block',
         title:'Depency Incetion w JavaScript',
         content: [

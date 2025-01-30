@@ -3,8 +3,8 @@ import path from 'path'
 import express from 'express'
 import cors from 'cors'
 
-import {article} from './article.js'
-import {landing} from './landing.js'
+import {article} from './pages/article.js'
+import {landing} from './pages/landing.js'
 
 const app = express()
 

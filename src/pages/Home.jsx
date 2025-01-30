@@ -21,7 +21,7 @@ const Home = () => {
 
     return (
         <>
-          <Main data={data}></Main>
+            <Main data={data}></Main>
         </>
       );
 };
